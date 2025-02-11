@@ -8,8 +8,8 @@ import LogoImage from './secret-messages-logo.png';
 import MessagesContext from './contexts/MessagesContext';
 import AccountContext from './contexts/AccountContext';
 
-// EXERCISE 2.a.
-const hostURL = "https://localhost:3002";
+// EXERCISE 4.1
+const hostURL = (process.env.NODE_ENV === "production") ? "https://pap-l6-lesson10-test-api.onrender.com" : "https://localhost:3002";
 
 const apiSignup = hostURL+ "/signup";
 const apiLogin = hostURL+ "/login";
